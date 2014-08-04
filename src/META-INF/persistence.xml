@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="librairiejpa" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>org.librairiejpa.dal.Auteur</class>
+		<class>org.librairiejpa.dal.Livre</class>
+		<class>org.librairiejpa.dal.Livreauteur</class>
+		<class>org.librairiejpa.dal.Utilisateur</class>
+		<class>org.librairiejpa.dal.Collection</class>
+		<class>org.librairiejpa.dal.Media</class>
+		<class>org.librairiejpa.dal.Theme</class>
+		<class>org.librairiejpa.dal.Type</class>
+				<class>org.librairiejpa.dal.Groupe</class>
+		<class>org.librairiejpa.dal.Personne</class>
+		<class>org.librairiejpa.dal.Role</class>
+		<class>org.librairiejpa.dal.Commande</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/librairie"/>
+			<property name="javax.persistence.jdbc.user" value="hb"/>
+			<property name="javax.persistence.jdbc.password" value="hb"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
